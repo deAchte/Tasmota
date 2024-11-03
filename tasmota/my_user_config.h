@@ -1398,4 +1398,10 @@
   #define USE_I2S_AUDIO_BERRY
 #endif // USE_I2S_ALL
 
+#ifndef USE_VL53L0X 
+#define USE_VL53L0X                            // [I2cDriver31] Enable VL53L0x time of flight sensor (I2C address 0x29) (+4k code)
+  #define VL53L0X_XSHUT_ADDRESS 0x78           //   VL53L0X base address when used with XSHUT control
+#endif
+
+
 #endif  // _MY_USER_CONFIG_H_
